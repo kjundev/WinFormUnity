@@ -42,6 +42,9 @@ namespace WinformUnity
             try
             {
                 process = new Process();
+                // 여기에 실행파일명을 넣습니다.
+                // 실행 파일은 Debug 일때 Debug 폴더 아래에 Release 일때 Release 폴더 밑에 두고 실행합니다.
+                
                 process.StartInfo.FileName = "gunshot.exe";
                 //process.StartInfo.FileName = "K.Shot.exe"; // 유니티만 된다.
 
@@ -53,8 +56,9 @@ namespace WinformUnity
 
                 process.WaitForInputIdle();
 
+                // 실행이 되지 않는다면 아래 sleep 주어 Unity Game 가 로드되는 시간을 늘려 주면됩니다.
                 // 시간을 주어야 실행이 가능하다.
-                //Thread.Sleep(5000);
+                Thread.Sleep(3000);
 
                 // Doesn't work for some reason ?!
                 //unityHWND = process.MainWindowHandle;

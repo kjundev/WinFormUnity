@@ -33,9 +33,10 @@
             // 
             // selectablePanel
             // 
+            this.selectablePanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.selectablePanel.Location = new System.Drawing.Point(0, 0);
             this.selectablePanel.Name = "selectablePanel";
-            this.selectablePanel.Size = new System.Drawing.Size(537, 370);
+            this.selectablePanel.Size = new System.Drawing.Size(1024, 617);
             this.selectablePanel.TabIndex = 0;
             this.selectablePanel.TabStop = true;
             this.selectablePanel.Resize += new System.EventHandler(this.selectablePanel1_Resize);
